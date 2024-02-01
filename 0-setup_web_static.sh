@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#
 # This script sets up the web server for the AirBnB clone project.
 # It installs Nginx, creates necessary directories, sets up a test HTML file,
 # creates a symbolic link, updates the Nginx configuration, and restarts the Nginx service.
@@ -17,7 +16,6 @@
 #
 # Example:
 #   sudo ./0-setup_web_static.sh
-# 
 
 if [ "$EUID" -ne 0 ]; then
   echo "Please run this script with sudo."
