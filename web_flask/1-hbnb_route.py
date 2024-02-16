@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A simple Flask web application that displays 'Hello HBNB!' message."""
+"""A simple Flask web application."""
 from flask import Flask
 app = Flask(__name__)
 
@@ -8,6 +8,11 @@ app = Flask(__name__)
 def index():
     """Route function to display 'Hello HBNB!' message."""
     return "Hello HBNB!"
+
+@app.route("/hbnb", strict_slashes=False)
+def hbnb():
+    """Route function to display 'HBNB' message."""
+    return "HBNB"
 
 
 if __name__ == "__main__":
