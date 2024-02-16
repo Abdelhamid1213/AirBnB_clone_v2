@@ -9,6 +9,7 @@ def index():
     """Route function to display 'Hello HBNB!' message."""
     return "Hello HBNB!"
 
+
 @app.route("/hbnb", strict_slashes=False)
 def hbnb():
     """Route function to display 'HBNB' message."""
