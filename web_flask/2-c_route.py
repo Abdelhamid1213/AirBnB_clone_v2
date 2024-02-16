@@ -16,6 +16,12 @@ def hbnb():
     return "HBNB"
 
 
+@app.route("/c/<text>", strict_slashes=False)
+def c(text):
+    """Route function to display '/c/<text>' message."""
+    return "C " + text.replace('_', ' ')
+
+
 if __name__ == "__main__":
     """Starts the Flask web application."""
     app.run(host='0.0.0.0', port=5000)
