@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""A simple Flask web application that displays 'Hello HBNB!' message."""
 from flask import Flask
 app = Flask(__name__)
 
